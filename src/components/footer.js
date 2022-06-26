@@ -105,21 +105,11 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/bwadjinny7/v4">
-          <div>Designed &amp; Built by Ilyas Wadjinny</div>
+        <a href="https://w-ilyas.me/">
+          <div>2021-2022 <b style={{"font-size": "17px"}} > &copy;</b> Ilyas WADJINNY</div>
+          
 
-          {githubInfo.stars && githubInfo.forks && (
-            <div className="github-stats">
-              <span>
-                <Icon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <Icon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </div>
-          )}
+         
         </a>
       </StyledCredit>
     </StyledFooter>

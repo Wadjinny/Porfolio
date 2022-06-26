@@ -1,26 +1,21 @@
 module.exports = {
-  email: 'Ilyas.wadjinny@gmail.com',
+  email: 'ilyas.wadjinny@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
       url: 'https://github.com/Wadjinny',
     },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/',
-    },
+    
+    
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/ilyas-wadjinny/*',
     },
+    
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/',
+      name: 'Behance',
+      url: 'https://www.behance.net/wadjinnyilyas',
     },
   ],
 
