@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
     title: 'Ilyas Wadjinny',
     description:
-      'Ilyas Wadjinny is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://Ilyaswadjinny.com', // No trailing slash allowed!
+      'Ilyas Wadjinny is a Data Scientist who specializes in building (and occasionally designing) exceptional data driven experiences.',
+    siteUrl: 'https://w-ilyas.me', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bwadjinny7',
   },
@@ -159,6 +159,7 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: true,
         },
+      },
     },
   ],
 };
