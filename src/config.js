@@ -10,7 +10,7 @@ module.exports = {
     
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/ilyas-wadjinny/*',
+      url: 'https://www.linkedin.com/in/ilyas-wadjinny/',
     },
     
     {
