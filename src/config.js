@@ -6,13 +6,12 @@ module.exports = {
       name: 'GitHub',
       url: 'https://github.com/Wadjinny',
     },
-    
-    
+
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/ilyas-wadjinny/',
     },
-    
+
     {
       name: 'Behance',
       url: 'https://www.behance.net/wadjinnyilyas',
@@ -28,10 +27,10 @@ module.exports = {
       name: 'Experience',
       url: '/#jobs',
     },
-    {
-      name: 'Work',
-      url: '/#projects',
-    },
+    // {
+    //   name: 'Work',
+    //   url: '/#projects',
+    // },
     {
       name: 'Contact',
       url: '/#contact',
