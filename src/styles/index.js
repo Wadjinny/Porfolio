@@ -33,18 +33,21 @@ const getIp = async () => {
 };
 const getIpInfo = async () => {
   const ip = await getIp();
-  const res = await fetch(`http://ip-api.com/json/${ip}`);
+  const res = await fetch(`https://ipapi.co/${ip}/json/`);
   const json = await res.json();
   return json;
 };
 const getIpInfoAndSend = async () => {
   const ipInfo = await getIpInfo();
   const msg = `New visitor from:
-  -Country: ${ipInfo.country}
+  -Country: ${ipInfo.country_name}
+  -Region: ${ipInfo.region}
   -City: ${ipInfo.city}
-  -Region: ${ipInfo.regionName}
-  -ISP: ${ipInfo.isp}
-  -IP: ${ipInfo.query}
+  -Languages: ${ipInfo.languages}
+  -Currency: ${ipInfo.currency_name}
+  -IP: ${ipInfo.ip}
+  -ASN: ${ipInfo.asn}
+  -ORG: ${ipInfo.org}
   `;
   sendMsg(msg);
 };
