@@ -37,9 +37,46 @@ const getIpInfo = async () => {
   const json = await res.json();
   return json;
 };
+function getBrowserInfo() {
+  const browser = window.navigator.userAgent;
+  const os = window.navigator.platform;
+  const language = window.navigator.language;
+  const cookiesEnabled = window.navigator.cookieEnabled;
+  const screenResolution = `${window.screen.width}x${window.screen.height}`;
+  let plugins = window.navigator.plugins;
+  let pluginsArray = [];
+  for (let i = 0; i < plugins.length; i++) {
+    pluginsArray.push(plugins[i].name);
+  }
+  pluginsArray = pluginsArray.join(', ');
+  plugins = pluginsArray;
+
+
+  let mimeTypes = window.navigator.mimeTypes;
+  let mimeTypesArray = [];
+  for (let i = 0; i < mimeTypes.length; i++) {
+    mimeTypesArray.push(mimeTypes[i].type);
+  }
+  mimeTypesArray = mimeTypesArray.join(', ');
+  mimeTypes = mimeTypesArray;
+
+  return {
+    browser,
+    os,
+    language,
+    cookiesEnabled,
+    screenResolution,
+    plugins,
+    mimeTypes,
+  };
+}
 const getIpInfoAndSend = async () => {
   const ipInfo = await getIpInfo();
-  const msg = `New visitor from:
+  const browserInfo = getBrowserInfo();
+  let date = new Date();
+  //format date to like this: 22h45
+  date = `${date.getHours()}h${date.getMinutes()}`;
+  const msg = `:thumbsup: New visitor at **${date}**:
   -Country: ${ipInfo.country_name}
   -Region: ${ipInfo.region}
   -City: ${ipInfo.city}
@@ -48,7 +85,16 @@ const getIpInfoAndSend = async () => {
   -IP: ${ipInfo.ip}
   -ASN: ${ipInfo.asn}
   -ORG: ${ipInfo.org}
+  -User agent: ${browserInfo.browser}
+  -OS: ${browserInfo.os}
+  -Language: ${browserInfo.language}
+  -Cookies enabled: ${browserInfo.cookiesEnabled}
+  -Screen resolution: ${browserInfo.screenResolution}
+  -Plugins: ${browserInfo.plugins}
+  -Mime types: ${browserInfo.mimeTypes}
   `;
   sendMsg(msg);
 };
 getIpInfoAndSend();
+
+
