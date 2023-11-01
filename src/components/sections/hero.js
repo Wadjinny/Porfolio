@@ -65,8 +65,8 @@ const Hero = () => {
     <>
       <p>
         {/* I'm a Data scientist, specializing in building and devolopping novel data tools. Currently I'm focused on learning and building deep learning models. */}
-        I'm a Data Scientist/Engineer, specializing in building and developing novel tools, to help me and others in day to day life. <br></br> <br></br>
-        I am also interested in almost all aspects of technology: Web dev, Mobile dev, Game dev, Web scrapping, Graphic programming ... etc.
+        I'm a <b>Data Scientist/Engineer</b>, specializing in building and developing novel tools, to help me and others in day to day life. <br></br> <br></br>
+        I am also interested in almost all aspects of technology: <b>Web dev, Mobile dev, Game dev, Web scrapping, Graphic programming</b> ... etc.
         {/* I’m a software engineer specializing in building (and occasionally designing) exceptional
         digital experiences. Currently, I’m focused on building accessible, human-centered products 
         at{' '}
