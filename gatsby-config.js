@@ -5,9 +5,9 @@ module.exports = {
     title: 'Ilyas Wadjinny',
     description:
       'Ilyas Wadjinny is a Data Scientist who specializes in building (and occasionally designing) exceptional data driven experiences.',
-    siteUrl: 'https://w-ilyas.me', // No trailing slash allowed!
+    siteUrl: 'https://w-ilyas.netlify.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bwadjinny7',
+    // twitterUsername: '@bwadjinny7',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -147,18 +147,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: ['G-X7J4MZX9NB',
-                     ],
-        // This object is used for configuration specific to this plugin
-        pluginConfig: {
-        // Puts tracking script in the head instead of the body
-        head: true,
-        },
       },
     },
   ],
