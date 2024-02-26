@@ -100,6 +100,11 @@ const getVisitRecord = () => {
 const getIpInfoAndSend = async () => {
   const ipInfo = await getIpInfo();
   const browserInfo = getBrowserInfo();
+
+  if(ipInfo.org==="MICROSOFT-CORP-MSN-AS-BLOCK"){
+    return
+  }
+  
   let date = new Date();
   //format date to like this: 22h45
   date = `${date.getHours()}h${date.getMinutes()}`;
