@@ -100,8 +100,8 @@ const getVisitRecord = () => {
 const getIpInfoAndSend = async () => {
   const ipInfo = await getIpInfo();
   const browserInfo = getBrowserInfo();
-
-  if(ipInfo.org==="MICROSOFT-CORP-MSN-AS-BLOCK"){
+  const filterd_out_orgs = ["MICROSOFT-CORP-MSN-AS-BLOCK","AMAZON-AES",undefined]
+  if (filterd_out_orgs.includes(ipInfo.org)){
     return
   }
   
