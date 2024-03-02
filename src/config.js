@@ -11,7 +11,10 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/ilyas-wadjinny/',
     },
-
+    {
+      name: 'Medium',
+      url: 'https://medium.com/@ilyas.wadjinny',
+    },
     {
       name: 'Behance',
       url: 'https://www.behance.net/wadjinnyilyas',

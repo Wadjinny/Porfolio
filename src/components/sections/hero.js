@@ -83,11 +83,24 @@ const Hero = () => {
       href="https://github.com/Wadjinny?tab=repositories"
       target="_blank"
       rel="noreferrer">
-      Check out projects!
+      Check out my projects!
     </a>
   );
-
-  const items = [one, two, three, four, five];
+  const six = (
+    <a
+      className="email-link"
+      style={{
+        color:"var(--navy)",
+        background:"var(--blue)",
+        marginTop:"20px"
+    }}
+      href="https://medium.com/@ilyas.wadjinny"
+      target="_blank"
+      rel="noreferrer">
+      Check out my articles!
+    </a>
+  );
+  const items = [one, two, three, four, five, six];
 
   return (
     <StyledHeroSection>

@@ -158,7 +158,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="https://media.licdn.com/dms/image/D4E03AQG_FgzSDEdKug/profile-displayphoto-shrink_800_800/0/1705676703157?e=1714608000&v=beta&t=bnGf4dAlbDKOD63PA0JMCYeDGgFIRbw0kLbXX2A9rxE"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

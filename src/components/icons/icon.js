@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  IconAppStore,
+  // IconAppStore,
   IconBookmark,
-  IconCodepen,
+  // IconCodepen,
   IconExternal,
   IconFolder,
   IconFork,
   IconGitHub,
-  IconInstagram,
+  // IconInstagram,
   IconLinkedin,
   IconLoader,
   IconLogo,
-  IconPlayStore,
+  // IconPlayStore,
   IconStar,
-  IconTwitter,
+  IconMedium,
   IconBehance,
 } from '@components/icons';
 
@@ -50,6 +50,8 @@ const Icon = ({ name }) => {
       return <IconTwitter />;
     case 'Behance':
       return <IconBehance />;
+    case 'Medium':
+      return <IconMedium/>
     default:
       return <IconExternal />;
   }
