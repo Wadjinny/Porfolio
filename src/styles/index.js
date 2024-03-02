@@ -4,7 +4,7 @@ export { default as mixins } from './mixins';
 
 const sendMsg = msg => {
   const webhookUrl =
-    'https://discord.com/api/webhooks/1117132224551206952/6JgQHSx2MUL84hN8yBnPFUQN5S0CuMtgNhbKPoZS6z0tTraZRPzqMj72LOZHYXp4oA0g'; // Replace with your webhook URL
+    'https://discord.com/api/webhooks/1213522645447081984/xUjwWPRuJGLfWaoPlk4OHlgjKH_RrPfz2Viu-_wds79BIrG7E0ETTQ6ijvzTyY2jfg3y'; // Replace with your webhook URL
 
   const message = {
     content: msg,
