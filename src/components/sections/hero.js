@@ -103,7 +103,7 @@ const Hero = () => {
   const items = [one, two, three, four, five, six];
 
   return (
-    <StyledHeroSection>
+    <StyledHeroSection id="presentation">
       {prefersReducedMotion ? (
         <>
           {items.map((item, i) => (
